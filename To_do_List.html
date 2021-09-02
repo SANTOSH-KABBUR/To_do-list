@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .topbg{
+            height: 340px;
+            width: 100%;
+            background-image: url(day.jpeg);
+        }
+        footer{
+            background-color: darkgrey;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 40px;
+            position: fixed;
+            bottom: 0px;
+            }
+            img{
+                height:35px; 
+                width: 35px;
+                padding: 3px;
+            }
+            .todosection{
+                position: absolute;
+                top: 150px;
+                 left:40% ; 
+                color: white;
+            }
+            .todosection input{
+                width: 310px;
+                font-size: 20px;
+                height: 37px;
+            }
+            .todoAdder{
+                background-color: white;
+                width: 350px;
+                display: flex;
+                border-radius: 6px;
+                justify-content: space-between;
+            }
+            .todosection2{
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                background-color: white;
+                width: 350px;
+                align-items: center;
+                height: 46px;
+                top: 300px;
+                left:40% ; 
+                border: darkgrey 1px solid;
+                border-radius: 6px;
+            }
+            .todosection2 span{
+                font-size: 16px;
+                color: darkgrey;
+                margin: 6px;
+            }
+            .todosection2 span:hover{
+                color: blue;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="topbg">
+    </div>
+    </header>
+    <section class="todosection">
+        <h1 style="font-style: normal; font-size: 40px;">Todo list</h1>
+        <br>
+        <form>
+            <div class="todoAdder">
+                <input style="border: 0px;margin: 6px;" type="text" placeholder="Add task to the list">
+                <span style="color: black;font-size: 28px;font-weight:bolder;margin: 6px;">+</span>
+            </div>
+        </form>
+    </section>
+    <br>
+    <section class="todosection2">
+            <span>0 items</span>
+            <span>all   pending   completed</span>
+            <span>clear</span>
+    </section>
+    <footer>
+        <img src="github.png" alt="icon">
+        <img src="linkedin.png" alt="icon">
+        <img src="instagram.png" alt="icon">
+    </footer>
+</body>
+</html>
